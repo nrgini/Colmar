@@ -25,6 +25,15 @@ h2 {
   font-family: 'Noto Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #566478;
+}
+
+a:hover {
+  color: #dad8d1;
+}
+
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
@@ -37,6 +46,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
+  background-color: rgba(132,118,109,0.2);
 }
 
 .logo {
@@ -60,14 +70,20 @@ h2 {
 }
 
 nav {
+  margin-right: 24px;
+}
+
+nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  max-height: 64px;
 }
 
 nav li {
-  text-decoration: none;
-  color: #2c2b3d;
   font-weight: bold;
+  margin-left: 16px;
 }
+
+ .sign-in {
+   color: #2c2b3d;
+ }
