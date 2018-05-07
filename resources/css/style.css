@@ -19,15 +19,18 @@ box-sizing: inherit;
 h1 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 2.75rem;
+  margin-bottom: 3rem;
+  line-height: 3.5rem;
 }
 
 h2 {
   font-family: 'Noto Sans', sans-serif;
+  font-size: 1.75rem;
 }
 
 a {
   text-decoration: none;
-  color: #566478;
+  color: #7a8eaa;
 }
 
 a:hover {
@@ -41,12 +44,14 @@ a:hover {
 }
 
 /* Header */
+/* logo */
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  background-color: rgba(132,118,109,0.2);
+  background-color: white;
+  border: 1px solid #00bcd4;
 }
 
 .logo {
@@ -69,6 +74,7 @@ a:hover {
   color: #7a8eaa;
 }
 
+/* nav section  */
 nav {
   margin-right: 24px;
 }
@@ -85,5 +91,42 @@ nav li {
 }
 
  .sign-in {
-   color: #2c2b3d;
+   color: #000000;
  }
+
+ .sign-in:hover {
+   color: #dad8d1;
+ }
+
+/* banner section */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00bcd4;
+  max-width: 960px;
+  background-color: #dad8d1;
+  padding: 24px;
+}
+
+.banner-pic img {
+  max-width: 100%;
+}
+
+.cta {
+  margin-left: 24px;
+}
+
+.btn {
+  max-width: 80%;
+  padding: 8px;
+  margin-top: 2rem;
+  color: #2c2b30;
+  background-color: #f7f986;
+  border-radius: 3px;
+}
+
+.btn p {
+  text-align: center;
+  font-weight: bold;
+}
