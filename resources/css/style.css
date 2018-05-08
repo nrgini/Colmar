@@ -11,7 +11,7 @@ box-sizing: inherit;
 }
 
 .container {
-  width: 960px;
+  width: 1366px;
   margin: 0 auto;
   border: 1px solid #00bcd4;
 }
@@ -19,7 +19,6 @@ box-sizing: inherit;
 h1 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 2.75rem;
-  margin-bottom: 3rem;
   line-height: 3.5rem;
 }
 
@@ -49,6 +48,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
   padding: 12px 24px;
   background-color: white;
   border: 1px solid #00bcd4;
@@ -104,22 +104,26 @@ nav li {
   justify-content: center;
   align-items: center;
   border: 1px solid #00bcd4;
-  max-width: 960px;
   background-color: #dad8d1;
   padding: 24px;
 }
 
 .banner-pic img {
-  max-width: 100%;
+  max-width: 820px;
 }
 
 .cta {
-  margin-left: 24px;
+  margin: 0 24px;
+  padding: 16px;
+}
+
+.cta h1 {
+  margin-bottom: 3rem;
 }
 
 .btn {
   max-width: 80%;
-  padding: 8px;
+  padding: 12px;
   margin-top: 2rem;
   color: #2c2b30;
   background-color: #f7f986;
@@ -129,4 +133,102 @@ nav li {
 .btn p {
   text-align: center;
   font-weight: bold;
+}
+
+.btn:hover {
+  color: #b1c1d0;
+  background-color: #2c2b30;
+  transition: all 0.75s linear 0.25s;
+}
+
+/* info section */
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid #00bcd4;
+  background-color: white;
+  padding: 24px;
+}
+
+.info-pic img {
+  max-width: 820px;
+}
+
+.info-posts {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 24px;
+}
+
+.info-post {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  padding: 16px;
+}
+
+.info-post img {
+  max-width: 35%;
+}
+
+.info-post3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #dad8d1;
+}
+
+.info-post .info-post3 img {
+  margin: 16px;
+  max-width: 35%;
+}
+
+.info-post-txt {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 65%;
+  margin-left: 24px;
+}
+
+.info-post-txt h2 {
+  margin-bottom: 1.5rem;
+}
+
+.info-post-txt p {
+  margin-bottom: 1.5rem;
+}
+
+.info-pitch {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid #00bcd4;
+  background-color: white;
+  padding: 24px;
+  max-width: 845px;
+}
+
+.info-quote {
+  text-align: left;
+  color: #566478;
+}
+
+.info-quote h1 {
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.info-quote p {
+  line-height: 1.5rem;
+  padding-bottom: 32px;
+}
+
+.credit {
+  font-size: 0.85rem;
+  font-weight: 600;
 }
