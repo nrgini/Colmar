@@ -53,7 +53,7 @@ a:hover {
   align-items: center;
   margin-top: 2rem;
   padding: 12px 24px;
-  background-color: white;
+  background-color: hsl(0,0%,100%);
 }
 
 .logo {
@@ -69,11 +69,11 @@ a:hover {
 }
 
 .logo-colmar {
-  color: #2c2b3d;
+  color: hsl(243, 17%, 20%);
 }
 
 .logo-academy {
-  color: #7a8eaa;
+  color: hsl(215, 22%, 57%);
 }
 
 /* nav section  */
@@ -93,11 +93,14 @@ nav li {
 }
 
  .sign-in {
-   color: #000000;
+   color: hsl(0, 0, 100%);
+   padding: 16px;
+   background-color: hsl(209, 25%, 75%)
  }
 
  .sign-in:hover {
-   color: #dad8d1;
+   background-color: hsl(252, 5%, 18%);
+   transition: background-color 0.5s linear 0.25s;
  }
 
 /* banner section */
