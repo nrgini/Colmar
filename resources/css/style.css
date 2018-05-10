@@ -32,11 +32,11 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #7a8eaa;
+  color: hsl(215, 17%, 40%);
 }
 
 a:hover {
-  color: #dad8d1;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 760px) {
@@ -105,7 +105,7 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #dad8d1;
+  background-color: hsla(47, 11%, 84%, 0.5);
   padding: 32px 24px;
 }
 
@@ -126,6 +126,7 @@ nav li {
 
 .cta h1 {
   margin-bottom: 3rem;
+  color: hsl(215, 17%, 40%)
 }
 
 .btn {
@@ -143,9 +144,8 @@ nav li {
 }
 
 .btn:hover {
-  color: #b1c1d0;
-  background-color: #2c2b30;
-  transition: all 0.75s linear 0.25s;
+  background-color: #b1c1d0;
+  transition: all 0.5s linear 0.25s;
 }
 
 /* info section */
@@ -184,7 +184,7 @@ nav li {
 }
 
 .info-post3 {
-  background-color: #dad8d1;
+  background-color: hsla(47, 11%, 84%, 0.5);
   padding: 16px;
   margin-bottom: 16px;
 }
@@ -226,6 +226,7 @@ nav li {
   margin-top: 8px;
   margin-bottom: 24px;
   width: 730px;
+  color: hsl(215, 17%, 40%)
 }
 
 .info-quote p {
@@ -245,7 +246,7 @@ nav li {
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 32px 72px;
-  background-color: #b1c1d0;
+  background-color: hsla(209, 25%, 75%, 0.5);
 }
 
 .course-title, .thesis-title {
@@ -255,7 +256,7 @@ nav li {
 }
 
 .course-title h1, .thesis-title h1 {
-  color: #2c2b30;
+  color: hsl(215, 17%, 40%);
 }
 
 .course {
@@ -304,6 +305,11 @@ nav li {
   padding-bottom: 24px;
 }
 
+/* footer */
+hr {
+  0.5px solid #dad8d1;
+}
 .copyright {
-
+  color: #2c2b30;
+  padding: 16px 24px;
 }
