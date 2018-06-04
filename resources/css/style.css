@@ -35,15 +35,10 @@ a {
   color: hsl(215, 17%, 40%);
 }
 
-a:hover {
+a:hover, a:active {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 760px) {
-  .main-content {
-    top: 2.5625rem;
-  }
-}
 
 /* Header */
 /* logo */
@@ -76,6 +71,20 @@ a:hover {
   color: hsl(215, 22%, 57%);
 }
 
+@media only screen and (max-width: 480px) {
+  .top-bar {
+    justify-content: space-around;
+    padding: 16px;
+    max-height: 64px;
+  }
+  .logo img {
+    max-height: 32px;
+  }
+  .logo-colmar, .logo-academy {
+    display: none;
+  }
+}
+
 /* nav section  */
 nav {
   margin-right: 24px;
@@ -87,21 +96,55 @@ nav ul {
   align-items: center;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 nav li {
   font-weight: bold;
   margin-left: 16px;
 }
 
- .sign-in {
+.sign-in {
    color: hsl(0, 0, 100%);
    padding: 16px;
    background-color: hsl(209, 25%, 75%)
- }
+}
 
- .sign-in:hover {
+.sign-in:hover {
    background-color: hsl(252, 5%, 18%);
    transition: background-color 0.5s linear 0.25s;
- }
+}
+
+@media only screen and (max-width: 480px) {
+  .top-bar {
+    justify-content: center;
+    align-items: center;
+  }
+
+nav {
+  height: 64px;
+}
+
+  .logo {
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .mobile-nav img {
+    height: 32px;
+  }
+}
 
 /* banner section */
 .banner {
@@ -112,13 +155,25 @@ nav li {
   padding: 32px 24px;
 }
 
-.banner-pic {
-  width: 60%;
+.banner {
+  max-width: 98%;
 }
 
-.banner-pic img {
-  max-width: 100%;
-  display: block;
+.banner img {
+  width: 59%;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner-pic {
+    width: 98%;
+    margin-bottom: 32px;
+  }
 }
 
 .cta {
@@ -151,6 +206,34 @@ nav li {
   transition: all 0.5s linear 0.25s;
 }
 
+@media only screen and (max-width: 480px) {
+  .cta {
+    margin: 0 24px;
+    padding: 16px;
+    width: 98%;
+  }
+
+  .cta h1 {
+    font-size: 5.3rem;
+    margin-bottom: 3rem;
+    color: hsl(215, 17%, 40%)
+  }
+
+  .cta h2 {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    max-width: 50%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .btn p {
+    font-size: 2rem;
+  }
+}
+
 /* info section */
 .info {
   display: flex;
@@ -166,6 +249,12 @@ nav li {
 .info-pic img {
   max-width: 100%;
   display: block;
+}
+
+@media only screen and (max-width: 480px) {
+  .info-pic {
+    display: none;
+  }
 }
 
 .info-posts {
@@ -218,6 +307,12 @@ nav li {
   padding: 0 24px 32px;
 }
 
+@media only screen and (max-width: 480px) {
+  .info-pitch {
+    flex-direction: column;
+  }
+}
+
 .info-quote {
   text-align: left;
   color: #566478;
@@ -266,7 +361,7 @@ nav li {
   width: 30%;
   height: 350px;
   overflow: hidden;
-  padding: 16px;
+  padding: 16px 0 16px 16px;
   margin-bottom: 32px;
 }
 
@@ -274,6 +369,25 @@ nav li {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+@media only screen and (max-width: 480px) {
+  .courses {
+    flex-direction: column;
+    background-color: hsla(209, 25%, 75%, 0);
+  }
+
+  .course {
+    width: 90%;
+    height: 100px;
+    background-color: hsla(209, 25%, 75%, 0.5);
+    margin-bottom: 12px;
+    padding:
+  }
+
+  .course img {
+    display: none;
+  }
 }
 
 .course h2 {
@@ -284,6 +398,19 @@ nav li {
 .course p {
   margin: 8px 16px;
   line-height: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .course h2 {
+    padding-top: 20px;
+    padding-left: 16px;
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .course p {
+    display: none;
+  }
 }
 
 /* Thesis section */
