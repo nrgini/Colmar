@@ -301,6 +301,27 @@ nav {
   max-width: 35%;
 }
 
+.info-post-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .info-posts {
+    width: 90%;
+    align-items: center;
+  }
+
+  .info-post {
+    display: none;
+  }
+
+  .info-post-mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 .info-post-txt {
   display: inline-flex;
   flex-direction: column;
