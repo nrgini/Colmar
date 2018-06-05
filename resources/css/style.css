@@ -170,8 +170,8 @@ nav {
     align-items: flex-start;
   }
 
-  .banner-pic {
-    width: 98%;
+  .banner img {
+    width: 100%;
     margin-bottom: 32px;
   }
 }
@@ -230,7 +230,8 @@ nav {
   }
 
   .btn p {
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 1rem;
   }
 }
 
@@ -408,6 +409,13 @@ nav {
     font-size: 2rem;
   }
 
+  .courses {
+    align-items: center;
+  }
+
+  .courses .course-title h1 {
+    font-size: 4.5rem;
+  }
   .course p {
     display: none;
   }
@@ -419,6 +427,12 @@ nav {
   align-items: flex-start;
   padding: 0 24px 32px;
   background-color: white;
+}
+
+@media only screen and (max-width: 480px){
+  .thesis-title h1 {
+    font-size: 4.5rem;
+  }
 }
 
 .video-container {
@@ -435,6 +449,23 @@ nav {
   padding-bottom: 24px;
 }
 
+@media only screen and (max-width: 480px) {
+  .thesis {
+    flex-direction: column;
+  }
+
+  .thesis .info-posts {
+    display: none;
+  }
+
+  .video-container {
+    width: 100%;
+  }
+
+  .info-pitch {
+    display: none;
+  }
+}
 /* footer */
 hr {
   0.5px solid #dad8d1;
