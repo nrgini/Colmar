@@ -77,9 +77,11 @@ a:hover, a:active {
     padding: 16px;
     max-height: 64px;
   }
+
   .logo img {
     max-height: 32px;
   }
+
   .logo-colmar, .logo-academy {
     display: none;
   }
@@ -96,8 +98,16 @@ nav ul {
   align-items: center;
 }
 
+.main-nav {
+
+}
+
 .mobile-nav {
   display: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 nav li {
@@ -120,10 +130,12 @@ nav li {
   .top-bar {
     justify-content: center;
     align-items: center;
+    margin-top: 0;
   }
 
 nav {
   height: 64px;
+  margin: 0;
 }
 
   .logo {
