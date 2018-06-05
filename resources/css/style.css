@@ -151,7 +151,7 @@ nav {
   }
 
 
-  ul {
+  .mobile-nav li {
     list-style-type: none;
   }
 
