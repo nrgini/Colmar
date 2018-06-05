@@ -106,10 +106,6 @@ nav ul {
   display: none;
 }
 
-ul {
-  list-style-type: none;
-}
-
 nav li {
   font-weight: bold;
   margin-left: 16px;
@@ -131,6 +127,7 @@ nav li {
     justify-content: center;
     align-items: center;
     margin-top: 0;
+    max-height: 100px;
   }
 
 nav {
@@ -153,8 +150,13 @@ nav {
     align-items: center;
   }
 
+
+  ul {
+    list-style-type: none;
+  }
+
   .mobile-nav img {
-    height: 32px;
+    height: 50px;
   }
 }
 
